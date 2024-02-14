@@ -1,5 +1,13 @@
 from PIL import Image
 import os
+import re
+
+def natural_sort_key(s):
+    """
+    Clave de ordenamiento natural para usar con sorted(), para ordenar alfanuméricamente.
+    Extrae todos los números y los trata como valores enteros durante el ordenamiento.
+    """
+    return [int(text) if text.isdigit() else text.lower() for text in re.split('([0-9]+)', s)]
 
 def get_unique_filename(directory, base_name, extension, part_suffix=""):
     """
@@ -24,7 +32,7 @@ def combine_images(folder_path, output_format='JPEG', output_directory=None):
         output_directory = folder_path
 
     # Lista de imágenes a combinar
-    images = [Image.open(os.path.join(folder_path, img)) for img in sorted(os.listdir(folder_path)) if img.lower().endswith(('.png', '.jpg', '.jpeg'))]
+    images = [Image.open(os.path.join(folder_path, img)) for img in sorted(os.listdir(folder_path), key=natural_sort_key) if img.lower().endswith(('.png', '.jpg', '.jpeg'))]
     if not images:
         return  # Termina la función si no hay imágenes para combinar
 
