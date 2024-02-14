@@ -20,7 +20,3 @@ Este código proporciona una interfaz de usuario (GUI) para dos funcionalidades 
 - Las imágenes deben estar en formato PNG, JPG o JPEG para poder ser procesadas correctamente.
 - Se recomienda tener cuidado al seleccionar las carpetas y al ingresar el número de partes durante el proceso de corte para evitar errores o resultados inesperados.
 - Es importante tener en cuenta que el proceso de unión de imágenes puede consumir una cantidad considerable de recursos, especialmente si las imágenes son de gran tamaño o hay muchas de ellas.
-
-**Links:**
-- Mediafire: https://www.mediafire.com/file/5dq8cgly0rq7ck0/Cortar_Unir.exe/file
-- Google Drive: https://drive.google.com/file/d/1Wezj26kRM5_ysDXmCJCRHAc6Z3ceF8kS/view?usp=sharing
