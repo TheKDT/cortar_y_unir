@@ -1,3 +1,6 @@
+pip install fire fugashi jaconv loguru numpy "Pillow>=10.0.0" pyperclip "torch>=1.0" "transformers>=4.25.0" unidic_lite
+
+
 **Descripción del uso principal:**
 Este código proporciona una interfaz de usuario (GUI) para dos funcionalidades principales: cortar y unir imágenes. Con la opción de "Cortar", el usuario puede seleccionar una carpeta que contiene imágenes y especificar en cuántas partes desea dividirlas. Las imágenes cortadas se guardarán en una subcarpeta dentro de la carpeta original. Con la opción de "Unir", el usuario puede seleccionar una carpeta que contiene imágenes ya divididas y estas se combinarán en una sola imagen verticalmente, guardándose en la misma carpeta.
 
