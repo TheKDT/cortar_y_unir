@@ -1,3 +1,6 @@
+set INCLUDE=C:\Mecab\sdk;%INCLUDE%
+set LIB=C:\Mecab\sdk;%LIB%
+
 pip install fire fugashi jaconv loguru numpy "Pillow>=10.0.0" pyperclip "torch>=1.0" "transformers>=4.25.0" unidic_lite
 
 
